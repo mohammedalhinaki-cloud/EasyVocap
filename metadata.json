@@ -1,0 +1,6 @@
+{
+  "name": "LexiVocab",
+  "description": "تطبيق متكامل لمراجعة وحفظ مفردات اللغة الإنجليزية بالبطاقات التعليمية والنطق الأمريكي دون إنترنت واختبار ذكي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

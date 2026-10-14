@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">LexiVocab</string>
+    <string name="nav_home">القوائم</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="new_list">قائمة جديدة</string>
+    <string name="list_name">اسم القائمة</string>
+    <string name="create">إنشاء</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="search_placeholder">بحث في القوائم…</string>
+    <string name="search_words_placeholder">بحث في الكلمات…</string>
+    <string name="empty_lists_title">لا توجد قوائم مفردات بعد</string>
+    <string name="empty_lists_subtitle">اضغط على زر الإضافة أو زر الاستيراد للبدء بحفظ الكلمات</string>
+    <string name="words_count">%1$d كلمة</string>
+    <string name="saved_count">%1$d محفوظة</string>
+    <string name="forgotten_count">%1$d منسية</string>
+    <string name="uncategorized_count">%1$d غير مصنفة</string>
+    
+    <!-- List Details -->
+    <string name="start_quiz">بدء الاختبار الذكي</string>
+    <string name="quick_review">المراجعة السريعة</string>
+    <string name="box_forgotten">صندوق الكلمات المنسية</string>
+    <string name="box_saved">صندوق الكلمات المحفوظة</string>
+    <string name="box_all">جميع الكلمات</string>
+    <string name="add_new_word">إضافة كلمة جديدة</string>
+    <string name="list_stats">إحصائيات القائمة</string>
+    <string name="reset_progress">إعادة تعيين التقدم</string>
+    <string name="reset_confirm_title">إعادة تعيين تقدم القائمة؟</string>
+    <string name="reset_confirm_desc">سيتم إعادة جميع كلمات هذه القائمة إلى حالة «غير مصنفة» وتصفير إحصائيات الحفظ والنسيان. لن تُحذف أي كلمة أو معنى أو مثال.</string>
+    <string name="delete_list_title">حذف القائمة؟</string>
+    <string name="delete_list_desc">هل أنت متأكد من حذف هذه القائمة؟ سيتم حذف جميع الكلمات التابعة لها فقط دون المساس بالقوائم الأخرى.</string>
+    
+    <!-- Quiz Dialog & Screen -->
+    <string name="quiz_filter_title">اختر الكلمات للاختبار</string>
+    <string name="filter_all">جميع كلمات القائمة</string>
+    <string name="filter_forgotten">الكلمات المنسية فقط</string>
+    <string name="filter_uncategorized">الكلمات غير المصنفة فقط</string>
+    <string name="filter_saved">الكلمات المحفوظة فقط</string>
+    <string name="quiz_start_button">ابدأ الاختبار</string>
+    <string name="btn_forgot">نسيتها</string>
+    <string name="btn_knew">عرفتها</string>
+    <string name="tap_to_reveal">اضغط لإظهار المعنى فورًا</string>
+    <string name="quiz_results_title">نتائج جلسة الاختبار</string>
+    <string name="results_tested">إجمالي المختبرة</string>
+    <string name="results_knew">عرفتها</string>
+    <string name="results_forgot">نسيتها</string>
+    <string name="results_accuracy">نسبة النجاح</string>
+    <string name="results_duration">مدة الجلسة</string>
+    <string name="btn_review_forgotten">مراجعة الكلمات المنسية</string>
+    <string name="btn_back_to_list">العودة إلى القائمة</string>
+    <string name="resume_session">استكمال الجلسة السابقة</string>
+    <string name="new_session">بدء جلسة جديدة</string>
+    <string name="resume_dialog_desc">لديك جلسة اختبار غير مكتملة في هذه القائمة. هل تود استكمالها من حيث توقفت؟</string>
+    
+    <!-- Word Fields -->
+    <string name="field_english">الكلمة بالإنجليزية *</string>
+    <string name="field_arabic">المعنى بالعربية *</string>
+    <string name="field_example_en">مثال بالإنجليزية (اختياري)</string>
+    <string name="field_example_ar">ترجمة المثال بالعربية (اختياري)</string>
+    <string name="field_derived_en">كلمة مشتقة بالإنجليزية (اختياري)</string>
+    <string name="field_derived_ar">ترجمة الكلمة المشتقة (اختياري)</string>
+    <string name="save_and_add_next">حفظ وإضافة التالية</string>
+    <string name="save_and_close">حفظ وإغلاق</string>
+    <string name="duplicate_word_warning">تنبيه: الكلمة موجودة بالفعل في هذه القائمة</string>
+    <string name="word_added_success">تمت إضافة الكلمة بنجاح</string>
+    
+    <!-- Quick Review -->
+    <string name="auto_advance">التقدم التلقائي</string>
+    <string name="auto_speak">النطق التلقائي</string>
+    <string name="prev_word">السابقة</string>
+    <string name="next_word">التالية</string>
+    <string name="card_of_total">%1$d من %2$d</string>
+    
+    <!-- Import / Export -->
+    <string name="import_words">استيراد كلمات</string>
+    <string name="export_list">تصدير القائمة (CSV)</string>
+    <string name="backup_all">نسخ احتياطي شامل (JSON)</string>
+    <string name="restore_backup">استعادة نسخة احتياطية</string>
+    <string name="import_source_choose">اختر ملف الاستيراد (CSV, TSV, TXT, LXF)</string>
+    <string name="select_file">تحديد ملف</string>
+    <string name="preview_first_10">معاينة أول 10 أسطر:</string>
+    <string name="target_list_mode">الوجهة:</string>
+    <string name="create_new_list_radio">إنشاء قائمة جديدة</string>
+    <string name="add_to_existing_radio">إضافة لقائمة موجودة</string>
+    <string name="import_stats_summary">سيتم استيراد: %1$d كلمة | مكررة: %2$d | غير صالحة: %3$d</string>
+    <string name="start_import_btn">بدء الاستيراد</string>
+    <string name="import_success_msg">تم استيراد %1$d كلمة بنجاح</string>
+    <string name="restore_confirm_title">تأكيد استعادة النسخة الاحتياطية؟</string>
+    <string name="restore_confirm_desc">تحذير: سيتم دمج أو استبدال البيانات الحالية بالنسخة الاحتياطية. هل أنت متأكد من المتابعة؟</string>
+    
+    <!-- TTS & Settings -->
+    <string name="tts_status_title">حالة النطق الصوتي الأمريكي (en-US)</string>
+    <string name="tts_ready">الصوت الأمريكي متوفر محليًا وجاهز للعمل دون إنترنت ✓</string>
+    <string name="tts_not_ready">الصوت الأمريكي غير مثبت محليًا. يُرجى تثبيت بيانات الصوت من إعدادات النظام.</string>
+    <string name="tts_open_settings">فتح إعدادات تحويل النص لكلام</string>
+    <string name="tts_test_btn">تجربة الصوت الأمريكي</string>
+    <string name="setting_auto_speak">النطق التلقائي للكلمات</string>
+    <string name="setting_timer_duration">مدة مؤقت الاختبار الذكي</string>
+    <string name="timer_seconds">%1$d ثوانٍ</string>
+    <string name="theme_mode">مظهر التطبيق</string>
+    <string name="theme_system">تلقائي (حسب النظام)</string>
+    <string name="theme_light">الوضع النهاري</string>
+    <string name="theme_dark">الوضع الليلي</string>
+    <string name="about_title">حول التطبيق</string>
+    <string name="about_desc">تطبيق مستقل مفتوح المصدر لمراجعة مفردات اللغة الإنجليزية بأعلى سرعة وكفاءة، يعمل 100% بدون إنترنت مع حماية كاملة لبياناتك.</string>
+    <string name="close">إغلاق</string>
+</resources>
