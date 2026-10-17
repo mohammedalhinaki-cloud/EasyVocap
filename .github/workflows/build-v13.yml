@@ -1,0 +1,39 @@
+name: Build EasyVocap v1.3 APK
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  android-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract and verify v1.3 Android source
+        run: |
+          base64 -d easyvocab_sources_v13.b64 > /tmp/easyvocab-v13.zip
+          unzip -oq /tmp/easyvocab-v13.zip -d .
+          grep -q 'versionName = "1.3"' app/build.gradle.kts
+          grep -q 'btn_quiz_edit_word' app/src/main/java/com/example/ui/quiz/QuizScreen.kt
+          grep -q 'fun prepareWordEdit' app/src/main/java/com/example/ui/quiz/QuizViewModel.kt
+          grep -q 'quizVm.prepareWordEdit' app/src/main/java/com/example/ui/navigation/NavGraph.kt
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.3.1'
+      - name: Install Android SDK
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install 'platforms;android-36' 'build-tools;36.0.0'
+      - name: Build v1.3 APK
+        run: gradle :app:assembleDebug --no-daemon --stacktrace
+      - name: Upload v1.3 APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: EasyVocap-v1.3-APK
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
